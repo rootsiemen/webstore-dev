@@ -8,11 +8,11 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: `Blog — ${BRAND.name}`,
-  description: "Practical guides on websites, ecommerce, SEO and online selling — from the WebStore Dev team.",
+  description: "Practical guides on websites, ecommerce, SEO and online selling in Pakistan — actionable tips and checklists from the WebStore Dev team.",
   alternates: { canonical: "https://www.tarm.tech/blog" },
   openGraph: {
     title: `Blog — ${BRAND.name}`,
-    description: "Practical guides on websites, ecommerce, SEO and online selling — from the WebStore Dev team.",
+    description: "Practical guides on websites, ecommerce, SEO and online selling in Pakistan — actionable tips and checklists from the WebStore Dev team.",
     url: "https://www.tarm.tech/blog",
     type: "website",
     siteName: BRAND.name,
@@ -28,7 +28,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Blog — ${BRAND.name}`,
-    description: "Practical guides on websites, ecommerce, SEO and online selling — from the WebStore Dev team.",
+    description: "Practical guides on websites, ecommerce, SEO and online selling in Pakistan — actionable tips and checklists from the WebStore Dev team.",
     images: ["https://www.tarm.tech/og-image.png"],
   },
 };

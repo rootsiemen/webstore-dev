@@ -10,12 +10,9 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tarm.tech"),
-  title: `${BRAND.name} — ${BRAND.tagline}`,
+  title: "WebStore Dev — Ecommerce Website Developer",
   description:
     "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration. Websites that sell.",
-  alternates: {
-    canonical: "https://www.tarm.tech",
-  },
   openGraph: {
     title: `${BRAND.name} — ${BRAND.tagline}`,
     description:

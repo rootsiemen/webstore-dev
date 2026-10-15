@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getDb, mapPortfolioItem } from "@/lib/db";
 import { Icon, btnPrimary } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Portfolio — Websites I've Built",
+  description:
+    "A showcase of ecommerce stores and business websites built by WebStore Dev — real client work, mobile-friendly and built to sell.",
+  alternates: { canonical: "https://www.tarm.tech/portfolio" },
+};
 
 const HUES = [
   "from-emerald-500 to-emerald-700",

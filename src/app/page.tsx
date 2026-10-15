@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { BRAND, FAQS, SERVICES } from "@/lib/content";
 import { getDb, mapPortfolioItem, mapTestimonial } from "@/lib/db";
@@ -6,6 +7,13 @@ import PricingCards from "@/components/PricingCards";
 import FeedbackForm from "@/components/FeedbackForm";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "WebStore Dev — Ecommerce Website Developer",
+  description:
+    "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration. Websites that sell.",
+  alternates: { canonical: "https://www.tarm.tech/" },
+};
 
 const orgSchema = {
   "@context": "https://schema.org",

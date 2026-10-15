@@ -6,7 +6,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: `Privacy Policy — ${BRAND.name}`,
-  description: `Privacy Policy of ${BRAND.name}. How we collect, use and protect your personal information.`,
+  description: `Privacy Policy of ${BRAND.name}: how we collect, use and protect your personal information when you visit our website or order web development services.`,
+  alternates: { canonical: "https://www.tarm.tech/privacy" },
 };
 
 const SECTIONS: { h: string; body: string[] }[] = [

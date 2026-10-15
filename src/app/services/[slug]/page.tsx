@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SERVICES, BRAND } from "@/lib/content";
@@ -7,6 +8,25 @@ export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const service = SERVICES.find((s) => s.slug === slug);
+  if (!service) return {};
+  const title = `${service.title} — WebStore Dev`;
+  const raw = service.longDesc || service.desc;
+  const description =
+    raw.length > 160 ? raw.slice(0, 157).trimEnd() + "..." : raw;
+  return {
+    title: title.length <= 60 ? title : service.title,
+    description,
+    alternates: { canonical: `https://www.tarm.tech/services/${slug}` },
+  };
 }
 
 export default async function ServiceDetailPage({

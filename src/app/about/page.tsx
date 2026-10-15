@@ -7,6 +7,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: `About — ${BRAND.name}`,
   description: `About ${BRAND.name}: I build complete ecommerce websites and business websites for clients worldwide — mobile-friendly, with admin panels and ordering built in.`,
+  alternates: { canonical: "https://www.tarm.tech/about" },
 };
 
 const VALUES = [

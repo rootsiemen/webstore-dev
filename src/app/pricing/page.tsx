@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import { BRAND, FAQS } from "@/lib/content";
 import { SectionHead, Icon } from "@/components/ui";
 import PricingCards from "@/components/PricingCards";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Website Pricing — WebStore Dev",
+  description:
+    "Transparent website pricing: starter sites, business websites and full ecommerce stores. No hidden fees — you own your domain, hosting and code.",
+  alternates: { canonical: "https://www.tarm.tech/pricing" },
+};
 
 export default function PricingPage() {
   const waHref = `https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(

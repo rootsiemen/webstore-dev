@@ -6,7 +6,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: `Terms of Service — ${BRAND.name}`,
-  description: `Terms of Service of ${BRAND.name}. The terms and conditions for using our website and ordering web development services.`,
+  description: `Terms of Service of ${BRAND.name}: the terms and conditions for using our website, ordering web development services and package deliverables.`,
+  alternates: { canonical: "https://www.tarm.tech/terms" },
 };
 
 const SECTIONS: { h: string; body: string[] }[] = [
@@ -90,11 +91,11 @@ const SECTIONS: { h: string; body: string[] }[] = [
 export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      <SectionHead
-        eyebrow="Legal"
-        title="Terms of Service"
-        sub={`Last updated: ${new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}. Please read these terms carefully before ordering.`}
-      />
+      <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-700 mb-3">Legal</p>
+      <h1 className="font-display text-4xl sm:text-5xl font-bold text-stone-900">Terms of Service</h1>
+      <p className="mt-4 text-stone-600">
+        {`Last updated: ${new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}. Please read these terms carefully before ordering.`}
+      </p>
       <div className="mt-8 space-y-8">
         {SECTIONS.map((s) => (
           <section key={s.h} className="rounded-3xl bg-white border border-stone-200 p-7">

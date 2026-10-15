@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SERVICES } from "@/lib/content";
 import { SectionHead, Icon, btnPrimary } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Web Development Services — WebStore Dev",
+  description:
+    "Custom business websites, ecommerce stores with admin panels, landing pages and online ordering with COD, JazzCash and Easypaisa integration.",
+  alternates: { canonical: "https://www.tarm.tech/services" },
+};
 
 const PROCESS = [
   ["Tell me about your project", "Fill the contact form or message me on WhatsApp with your business details and products."],
