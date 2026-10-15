@@ -8,7 +8,19 @@ import { formatDate } from "@/lib/blog";
 
 export const dynamic = "force-dynamic";
 
-const SITE_URL = "https://tarm.tech";
+const SITE_URL = "https://www.tarm.tech";
+
+function truncate(str: string, max: number): string {
+  if (str.length <= max) return str;
+  return str.slice(0, max - 3).trimEnd() + "...";
+}
+
+function clampDescription(str: string): string {
+  const clean = str.replace(/\s+/g, " ").trim();
+  if (clean.length >= 120 && clean.length <= 160) return clean;
+  if (clean.length > 160) return truncate(clean, 160);
+  return clean;
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -16,25 +28,29 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const row = await db.prepare("SELECT * FROM blog_posts WHERE slug = ? AND status = 'published'").get(slug);
   if (!row) return {};
   const post = mapBlogPost(row);
-  const description = post.metaDescription || post.excerpt;
+  const description = clampDescription(post.metaDescription || post.excerpt || post.title);
+  const title = truncate(post.title, 60);
   const url = `${SITE_URL}/blog/${post.slug}`;
+  const ogImage = `${SITE_URL}/og-image.png`;
   return {
-    title: `${post.title} — ${BRAND.name} Blog`,
+    title,
     description,
     alternates: { canonical: url },
     openGraph: {
-      title: post.title,
+      title,
       description,
       url,
       type: "article",
       siteName: BRAND.name,
       publishedTime: post.createdAt,
       authors: [BRAND.name],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
-      card: "summary",
-      title: post.title,
+      card: "summary_large_image",
+      title,
       description,
+      images: [ogImage],
     },
   };
 }

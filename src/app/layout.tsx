@@ -9,9 +9,37 @@ import "./globals.css";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.tarm.tech"),
   title: `${BRAND.name} — ${BRAND.tagline}`,
   description:
     "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration. Websites that sell.",
+  alternates: {
+    canonical: "https://www.tarm.tech",
+  },
+  openGraph: {
+    title: `${BRAND.name} — ${BRAND.tagline}`,
+    description:
+      "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration.",
+    url: "https://www.tarm.tech",
+    siteName: BRAND.name,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.tarm.tech/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "WebStore Dev — Ecommerce Website Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${BRAND.name} — ${BRAND.tagline}`,
+    description:
+      "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration.",
+    images: ["https://www.tarm.tech/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
