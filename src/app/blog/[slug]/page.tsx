@@ -87,6 +87,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "@type": "Article",
     headline: post.title,
     description: post.metaDescription || post.excerpt,
+    image: `${SITE_URL}/og-image.png`,
     datePublished: post.createdAt,
     author: { "@type": "Organization", name: BRAND.name, url: SITE_URL },
     publisher: { "@type": "Organization", name: BRAND.name, url: SITE_URL },
