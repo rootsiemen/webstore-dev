@@ -7,6 +7,33 @@ import FeedbackForm from "@/components/FeedbackForm";
 
 export const dynamic = "force-dynamic";
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: BRAND.name,
+  url: "https://www.tarm.tech",
+  description:
+    "WebStore Dev builds custom ecommerce websites with Next.js and React — online stores with admin panel, shopping cart, Cash on Delivery, WhatsApp ordering and payment integration.",
+  email: BRAND.email,
+  telephone: `+${BRAND.whatsapp}`,
+  priceRange: "$80 - $300",
+  makesOffer: [
+    { "@type": "Offer", name: "Starter Website", price: "80", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Business Website", price: "150", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Pro Website", price: "300", priceCurrency: "USD" },
+  ],
+};
+
+const homeFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 // CSS-only browser mockup visual (no external images).
 function BrowserMock({ title, hue }: { title: string; hue: string }) {
   return (
@@ -180,6 +207,14 @@ export default async function HomePage() {
 
       {/* ---------- FAQ ---------- */}
       <section className="py-20 bg-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+        />
         <div className="max-w-3xl mx-auto px-4">
           <SectionHead eyebrow="FAQ" title="Questions, answered" />
           <div className="space-y-4">

@@ -1,0 +1,54 @@
+# WebStore Dev
+
+> Ecommerce website developer — complete online stores that sell. Custom Next.js websites, admin panels, Cash on Delivery, WhatsApp ordering, and payment integration.
+
+WebStore Dev (https://www.tarm.tech) is a web development service by Raza. Every website is custom-built with Next.js and React — fast, mobile-responsive, and SEO-friendly. Packages include an admin panel, shopping cart, checkout, and order management.
+
+## Pages
+
+- [Home — Ecommerce Website Developer](https://www.tarm.tech/)
+- [Services](https://www.tarm.tech/services)
+- [Pricing](https://www.tarm.tech/pricing)
+- [Portfolio](https://www.tarm.tech/portfolio)
+- [About](https://www.tarm.tech/about)
+- [Contact](https://www.tarm.tech/contact)
+- [Blog — Website & Ecommerce Guides](https://www.tarm.tech/blog)
+
+## Services
+
+- [Ecommerce Website](https://www.tarm.tech/services/ecommerce-website) — complete online store with product catalog, cart, checkout, order management
+- [Business Website](https://www.tarm.tech/services/business-website) — professional company website with services, portfolio, contact forms
+- [Admin Panel](https://www.tarm.tech/services/admin-panel) — dashboard to add products, update prices, track orders yourself
+- [Payment Integration](https://www.tarm.tech/services/payment-integration) — Stripe, PayPal, JazzCash, Easypaisa on your own merchant account
+- [WhatsApp Ordering](https://www.tarm.tech/services/whatsapp-ordering) — one-tap ordering through WhatsApp chat
+- [SEO Basics](https://www.tarm.tech/services/seo-basics) — search-friendly structure, fast loading, meta tags on every page
+
+## Pricing (one-time)
+
+- Starter Website: $80 — 5 pages, up to 20 products, mobile responsive, cart & checkout, Cash on Delivery, 5-day delivery, 7-day support
+- Business Website: $150 (most popular) — 8 pages, up to 100 products, admin panel, WhatsApp ordering + COD, order notifications, 7-day delivery, 14-day support
+- Pro Website: $300 — 12 pages, payment gateway integration, custom banners & branding, order email alerts, SEO basics, 10-day delivery, 30-day priority support
+
+## Key facts
+
+- Business: WebStore Dev — freelance web development service
+- Website: https://www.tarm.tech
+- Tech stack: Next.js, React, Turso (SQLite) database
+- Delivery: Starter 5 days, Business 7 days, Pro 10 days
+- Payments accepted: Cash on Delivery, JazzCash, Easypaisa, Stripe, PayPal, WhatsApp ordering, Binance Pay, Payoneer, USDT
+- Contact: WhatsApp +9647710737529, email muhammadraza512512@gmail.com
+- Domain & hosting: client buys their own (~$15/year); site stays 100% client-owned
+- Post-launch: client can update products/prices/orders themselves via admin panel — no coding needed
+- Sister projects: Temp Mail (https://tempmaill.tech), PlayZone (https://games.tempmaill.tech)
+
+## Common questions, answered
+
+- What services does WebStore Dev offer? Custom ecommerce websites, business websites, admin panels, payment integration (Stripe/PayPal/JazzCash/Easypaisa), WhatsApp ordering, and SEO basics.
+- How much does a website cost? Starter $80, Business $150, Pro $300 — one-time payment, no monthly fees to the developer.
+- How long does it take to build a website? Starter: 5 days. Business: 7 days. Pro: 10 days.
+- What technology is used? Next.js and React — fast, secure, and SEO-friendly.
+- Can I update my website myself? Yes — Business and Pro include an admin panel for products, prices, and orders with no coding.
+- Which payment methods can my store accept? Cash on Delivery, JazzCash, Easypaisa, Stripe, PayPal, and WhatsApp ordering — online gateways use your own merchant account.
+- Will my website work on mobile? Yes — every site is fully mobile responsive.
+- Do I need to buy domain and hosting? Yes, guided step by step (~$15/year); the site remains 100% yours.
+- What should I ask before hiring a web developer? Ask about portfolio, tech stack, delivery time, total cost, who owns the domain/hosting, admin panel access, payment methods, mobile responsiveness, SEO basics, and post-launch support. Full checklist: https://www.tarm.tech/blog/questions-before-hiring-web-developer-2026

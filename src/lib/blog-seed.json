@@ -312,5 +312,45 @@
       "Go through this list honestly, fix what is missing, and then launch with confidence. A store that opens polished earns trust from the very first visitor — and trust is what turns visitors into the repeat customers every ecommerce business is built on.",
       "Print this checklist, work through it with a pen, and do not launch until every item is checked off. Future you — calmly handling real orders instead of firefighting — will be grateful."
     ]
+  },
+  {
+    "title": "10 Questions to Ask Before Hiring a Web Developer in 2026",
+    "slug": "questions-before-hiring-web-developer-2026",
+    "excerpt": "Hiring a web developer? These 10 questions separate professionals from problems — ask them before you pay a single rupee.",
+    "category": "Guides",
+    "content": [
+      "Hiring a web developer is a big decision — and most people ask the wrong questions. They ask about price first and discover the real problems later: missed deadlines, a site they cannot update themselves, and surprise costs after launch. Ask these 10 questions before you sign anything, and you will avoid 90% of bad experiences.",
+      "Quick answer: ask about their portfolio, technology, delivery timeline, total cost, who owns the domain and hosting, whether you get an admin panel, payment methods supported, mobile responsiveness, SEO basics, and post-launch support.",
+      "## 1. Can I see websites you have actually built?",
+      "A portfolio is non-negotiable. Do not accept screenshots alone — ask for live links you can open yourself. Click around: does the site load fast, work on your phone, and look professional? A developer with no live work to show is a gamble, no matter how convincing the pitch.",
+      "## 2. What technology will you use — and why?",
+      "The answer tells you a lot. Modern stacks like Next.js and React produce fast, secure, SEO-friendly sites. If the developer cannot explain why they chose their tools in plain language, they may be using whatever is easiest for them rather than best for you. Avoid anyone who cannot answer this clearly.",
+      "## 3. Exactly how long will it take?",
+      "Get a delivery date in writing, not a vague promise. A standard business website should take 5 to 10 days; a full ecommerce store 7 to 15 days. Ask what happens if they miss the deadline — a professional will have an answer, even if it is just honest communication.",
+      "## 4. What is the TOTAL cost — with no surprises later?",
+      "Ask for the full price upfront: build cost, plus anything extra like domain, hosting, payment gateway setup, or content writing. A Rs. 50,000 quote that needs Rs. 30,000 in extras is really an Rs. 80,000 project. Get the total in writing before work starts.",
+      "> Rule of thumb: if the quote seems impossibly cheap, something is missing — quality, features, or support after launch.",
+      "## 5. Who owns the domain and hosting?",
+      "This one matters more than people think. The domain and hosting must be registered in YOUR name and YOUR account — never in the developer's. If the developer controls them, they control your business online, and switching developers later becomes a hostage situation. Walk away from anyone who insists on owning them.",
+      "## 6. Can I update the website myself after launch?",
+      "You should not need a developer — or pay one — every time you want to change a price or add a product. Ask for an admin panel: a simple dashboard where you can manage products, prices, and orders with no coding. If the developer says every small change requires their help, that is a future revenue stream for them, not a feature for you.",
+      "## 7. Which payment methods will my store support?",
+      "For online selling, this decides whether you actually make money. Confirm support for Cash on Delivery, JazzCash or Easypaisa for local customers, and Stripe or PayPal if you sell internationally. Critically, online payments must go to YOUR merchant account — not routed through the developer.",
+      "## 8. Will the website work perfectly on mobile phones?",
+      "More than 80% of your customers will visit on a phone. 'Responsive' should mean tested on real phones, not just resized on a desktop browser. Open the developer's past work on your own phone before you hire them — if it looks broken, that is your answer.",
+      "## 9. Is basic SEO included?",
+      "You do not need an expensive SEO package on day one, but the site must be built SEO-ready: fast loading, proper page titles and descriptions, clean URLs, and a sitemap Google can read. A beautiful site that Google cannot find is an expensive brochure nobody reads.",
+      "## 10. What support do I get after launch?",
+      "Websites need small fixes after going live — a typo here, a broken link there. Ask how long free support lasts (7 to 30 days is standard) and what it covers. Also ask how you reach them: a developer who disappears after payment is the most common complaint in this industry.",
+      "## Red flags: walk away when you see these",
+      "- No live portfolio, only mockups or screenshots.",
+      "- They want full payment upfront before any work.",
+      "- The domain and hosting will be 'managed' under their account.",
+      "- No written agreement on price, timeline, or deliverables.",
+      "- They cannot explain their technology choice simply.",
+      "- Every future update 'requires' hiring them again.",
+      "## The bottom line",
+      "A good web developer welcomes these questions — they prove you are a serious client. The right hire gives you a fast, mobile-friendly website you own completely, can update yourself, and that starts bringing customers from day one. Ask the 10 questions, get the answers in writing, and you will hire with confidence."
+    ]
   }
 ]
