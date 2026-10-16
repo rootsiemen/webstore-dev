@@ -32,7 +32,7 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen grid place-items-center bg-emerald-50 dot-grid px-4">
       <form onSubmit={submit} className="w-full max-w-sm rounded-3xl bg-white p-8 shadow-2xl">
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-300 to-amber-600 grid place-items-center font-display font-bold text-emerald-950 text-xl mb-5">W</div>
+        <img src="/logo.webp" alt="WebStore Dev" className="w-12 h-12 rounded-2xl object-cover mb-5" />
         <h1 className="font-display text-2xl font-bold text-stone-900">Admin Login</h1>
         <p className="text-sm text-stone-500 mt-1">WebStore Dev owner area.</p>
         <label className="block mt-6 text-sm font-medium text-stone-700">Email

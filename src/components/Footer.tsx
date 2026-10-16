@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-14 grid gap-10 md:grid-cols-5">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5 mb-4">
-            <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 to-amber-600 grid place-items-center font-display font-bold text-emerald-950 text-lg">W</span>
+            <img src="/logo.webp" alt="WebStore Dev" className="w-9 h-9 rounded-xl object-cover" />
             <span className="font-display font-bold text-stone-900 text-lg">{BRAND.name}</span>
           </div>
           <p className="text-sm max-w-sm text-stone-500">{BRAND.tagline}. I build complete, mobile-friendly online stores and business websites for clients worldwide.</p>

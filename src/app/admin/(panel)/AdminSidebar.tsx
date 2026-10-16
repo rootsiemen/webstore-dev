@@ -26,7 +26,7 @@ export default function AdminSidebar({ adminName }: { adminName: string }) {
     <div className="flex flex-col h-full">
       <div className="p-5">
         <div className="flex items-center gap-2.5">
-          <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 to-amber-600 grid place-items-center font-display font-bold text-emerald-950">W</span>
+          <img src="/logo.webp" alt="WebStore Dev" className="w-9 h-9 rounded-xl object-cover" />
           <div>
             <div className="font-display font-bold text-stone-900 leading-tight">WebStore Dev</div>
             <div className="text-xs text-stone-500 truncate">{adminName}</div>

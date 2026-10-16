@@ -93,7 +93,7 @@ export default function AdminForgotPasswordPage() {
   return (
     <div className="min-h-screen grid place-items-center bg-emerald-50 dot-grid px-4">
       <div className="w-full max-w-sm rounded-3xl bg-white p-8 shadow-2xl">
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-300 to-amber-600 grid place-items-center font-display font-bold text-emerald-950 text-xl mb-5">W</div>
+        <img src="/logo.webp" alt="WebStore Dev" className="w-12 h-12 rounded-2xl object-cover mb-5" />
         <h1 className="font-display text-2xl font-bold text-stone-900">Reset Admin Password</h1>
         <p className="text-sm text-stone-500 mt-1">
           {step === 1 && "Enter the reset key from your server settings."}
