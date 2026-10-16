@@ -5,12 +5,53 @@ import PricingCards from "@/components/PricingCards";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = "https://www.tarm.tech";
+const PAGE_TITLE = "Website Pricing — WebStore Dev";
+const PAGE_DESC =
+  "Transparent website pricing: starter sites, business websites and full ecommerce stores. No hidden fees — you own your domain, hosting and code.";
+const PAGE_URL = `${SITE_URL}/pricing`;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 export const metadata: Metadata = {
-  title: "Website Pricing — WebStore Dev",
-  description:
-    "Transparent website pricing: starter sites, business websites and full ecommerce stores. No hidden fees — you own your domain, hosting and code.",
-  alternates: { canonical: "https://www.tarm.tech/pricing" },
+  title: PAGE_TITLE,
+  description: PAGE_DESC,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    type: "website",
+    siteName: BRAND.name,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: PAGE_TITLE }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    images: [OG_IMAGE],
+  },
 };
+
+// FAQPage schema — matches ONLY the 4 questions rendered visibly on this page.
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Pricing", item: PAGE_URL },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.slice(0, 4).map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
 
 export default function PricingPage() {
   const waHref = `https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(
@@ -18,6 +59,7 @@ export default function PricingPage() {
   )}`;
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="bg-emerald-50 dot-grid py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-700 mb-3">Packages</p>

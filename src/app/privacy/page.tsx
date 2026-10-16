@@ -4,11 +4,49 @@ import { SectionHead, btnPrimary, Icon } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = "https://www.tarm.tech";
+const PAGE_TITLE = `Privacy Policy — ${BRAND.name}`;
+const PAGE_DESC = `Privacy Policy of ${BRAND.name}: how we collect, use and protect your personal information when you visit our website or order web development services.`;
+const PAGE_URL = `${SITE_URL}/privacy`;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 export const metadata = {
-  title: `Privacy Policy — ${BRAND.name}`,
-  description: `Privacy Policy of ${BRAND.name}: how we collect, use and protect your personal information when you visit our website or order web development services.`,
-  alternates: { canonical: "https://www.tarm.tech/privacy" },
+  title: PAGE_TITLE,
+  description: PAGE_DESC,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    type: "website",
+    siteName: BRAND.name,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: PAGE_TITLE }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    images: [OG_IMAGE],
+  },
 };
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Privacy Policy", item: PAGE_URL },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+  },
+];
 
 const SECTIONS: { h: string; body: string[] }[] = [
   {
@@ -77,6 +115,7 @@ const SECTIONS: { h: string; body: string[] }[] = [
 export default function PrivacyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="bg-emerald-50 dot-grid py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-700 mb-3">Legal</p>

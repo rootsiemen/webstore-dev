@@ -4,10 +4,30 @@ import { SectionHead, Icon, btnPrimary, btnOutline } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = "https://www.tarm.tech";
+const PAGE_TITLE = `About — ${BRAND.name}`;
+const PAGE_DESC = `About ${BRAND.name}: I build complete ecommerce websites and business websites for clients worldwide — mobile-friendly, with admin panels and ordering built in.`;
+const PAGE_URL = `${SITE_URL}/about`;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 export const metadata = {
-  title: `About — ${BRAND.name}`,
-  description: `About ${BRAND.name}: I build complete ecommerce websites and business websites for clients worldwide — mobile-friendly, with admin panels and ordering built in.`,
-  alternates: { canonical: "https://www.tarm.tech/about" },
+  title: PAGE_TITLE,
+  description: PAGE_DESC,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    type: "website",
+    siteName: BRAND.name,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: PAGE_TITLE }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    images: [OG_IMAGE],
+  },
 };
 
 const VALUES = [
@@ -17,10 +37,35 @@ const VALUES = [
   { icon: "star", title: "Built to sell", text: "Every site is designed around one goal: turning your visitors into paying customers." },
 ];
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "About", item: PAGE_URL },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    mainEntity: {
+      "@type": "ProfessionalService",
+      name: BRAND.name,
+      url: SITE_URL,
+      description: "Ecommerce website developer — complete online stores that sell.",
+    },
+  },
+];
+
 export default function AboutPage() {
   const waHref = `https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent("Hi! I'd like to discuss a website project.")}`;
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="bg-emerald-50 dot-grid py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-700 mb-3">About</p>

@@ -1,15 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SERVICES } from "@/lib/content";
+import { SERVICES, BRAND } from "@/lib/content";
 import { SectionHead, Icon, btnPrimary } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = "https://www.tarm.tech";
+const PAGE_TITLE = "Web Development Services — WebStore Dev";
+const PAGE_DESC =
+  "Custom business websites, ecommerce stores with admin panels, landing pages and online ordering with COD, JazzCash and Easypaisa integration.";
+const PAGE_URL = `${SITE_URL}/services`;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 export const metadata: Metadata = {
-  title: "Web Development Services — WebStore Dev",
-  description:
-    "Custom business websites, ecommerce stores with admin panels, landing pages and online ordering with COD, JazzCash and Easypaisa integration.",
-  alternates: { canonical: "https://www.tarm.tech/services" },
+  title: PAGE_TITLE,
+  description: PAGE_DESC,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    type: "website",
+    siteName: BRAND.name,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: PAGE_TITLE }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    images: [OG_IMAGE],
+  },
 };
 
 const PROCESS = [
@@ -18,9 +38,38 @@ const PROCESS = [
   ["Review & launch", "You review everything, I make revisions, then we launch your site and I show you how to run it."],
 ];
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Services", item: PAGE_URL },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: SERVICES.map((s, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: s.title,
+        url: `${SITE_URL}/services/${s.slug}`,
+        description: s.desc,
+      })),
+    },
+  },
+];
+
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="bg-emerald-50 dot-grid py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-700 mb-3">Services</p>

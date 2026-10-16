@@ -6,6 +6,9 @@ import { SectionHead, Icon, btnPrimary, btnOutline } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = "https://www.tarm.tech";
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
 }
@@ -18,14 +21,29 @@ export async function generateMetadata({
   const { slug } = await params;
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return {};
-  const title = `${service.title} — WebStore Dev`;
+  const title =
+    `${service.title} — WebStore Dev`.length <= 60 ? `${service.title} — WebStore Dev` : service.title;
   const raw = service.longDesc || service.desc;
-  const description =
-    raw.length > 160 ? raw.slice(0, 157).trimEnd() + "..." : raw;
+  const description = raw.length > 160 ? raw.slice(0, 157).trimEnd() + "..." : raw;
+  const url = `${SITE_URL}/services/${slug}`;
   return {
-    title: title.length <= 60 ? title : service.title,
+    title,
     description,
-    alternates: { canonical: `https://www.tarm.tech/services/${slug}` },
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      siteName: BRAND.name,
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [OG_IMAGE],
+    },
   };
 }
 
@@ -47,8 +65,36 @@ export default async function ServiceDetailPage({
     `Hi! I'm interested in your ${service.title} service.`
   )}`;
 
+  const serviceUrl = `${SITE_URL}/services/${service.slug}`;
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Services", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: service.title, item: serviceUrl },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: service.title,
+      description: service.longDesc || service.desc,
+      url: serviceUrl,
+      provider: {
+        "@type": "ProfessionalService",
+        name: BRAND.name,
+        url: SITE_URL,
+      },
+      serviceType: service.title,
+    },
+  ];
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <section className="bg-emerald-50 dot-grid py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4">

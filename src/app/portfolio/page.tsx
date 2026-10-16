@@ -1,15 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDb, mapPortfolioItem } from "@/lib/db";
+import { BRAND } from "@/lib/content";
 import { Icon, btnPrimary } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = "https://www.tarm.tech";
+const PAGE_TITLE = "Portfolio — Websites I've Built";
+const PAGE_DESC =
+  "A showcase of ecommerce stores and business websites built by WebStore Dev — real client work, mobile-friendly and built to sell.";
+const PAGE_URL = `${SITE_URL}/portfolio`;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 export const metadata: Metadata = {
-  title: "Portfolio — Websites I've Built",
-  description:
-    "A showcase of ecommerce stores and business websites built by WebStore Dev — real client work, mobile-friendly and built to sell.",
-  alternates: { canonical: "https://www.tarm.tech/portfolio" },
+  title: PAGE_TITLE,
+  description: PAGE_DESC,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    url: PAGE_URL,
+    type: "website",
+    siteName: BRAND.name,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: PAGE_TITLE }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    images: [OG_IMAGE],
+  },
 };
 
 const HUES = [
@@ -23,8 +44,37 @@ export default async function PortfolioPage() {
   const db = await getDb();
   const items = (await db.prepare("SELECT * FROM portfolio_items ORDER BY id DESC").all()).map(mapPortfolioItem);
 
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Portfolio", item: PAGE_URL },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: PAGE_TITLE,
+      description: PAGE_DESC,
+      url: PAGE_URL,
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: items.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: p.title,
+          description: p.description,
+          ...(p.link ? { url: p.link } : {}),
+        })),
+      },
+    },
+  ];
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="bg-emerald-50 dot-grid py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-700 mb-3">Portfolio</p>
