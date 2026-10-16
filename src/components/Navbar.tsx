@@ -33,7 +33,6 @@ export default function Navbar() {
           <img src="/logo.webp" alt="WebStore Dev" className="w-9 h-9 rounded-xl object-cover" />
           <span className="leading-tight">
             <span className="block font-display font-bold text-stone-900">{BRAND.name}</span>
-            <span className="block text-[10px] uppercase tracking-widest text-amber-600">Websites that sell</span>
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
