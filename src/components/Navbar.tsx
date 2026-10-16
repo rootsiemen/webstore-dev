@@ -8,7 +8,6 @@ const LINKS = [
   ["Home", "/"],
   ["Services", "/services"],
   ["Portfolio", "/portfolio"],
-  ["Web Portfolio", "/web-developer-portfolio.html"],
   ["Pricing", "/pricing"],
   ["Blog", "/blog"],
   ["Contact", "/contact"],
