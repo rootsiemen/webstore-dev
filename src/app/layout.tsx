@@ -55,6 +55,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="min-h-[70vh]">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        {/* 100% privacy-first analytics */}
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js" />
       </body>
     </html>
   );
