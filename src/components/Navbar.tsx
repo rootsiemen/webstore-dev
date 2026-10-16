@@ -32,7 +32,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2.5">
           <img src="/logo.webp" alt="WebStore Dev" className="w-12 h-12 rounded-xl object-cover" />
           <span className="leading-tight">
-            <span className="block font-display font-bold text-stone-900">{BRAND.name}</span>
+            <span className="block font-display font-bold text-stone-900 text-xl">{BRAND.name}</span>
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
