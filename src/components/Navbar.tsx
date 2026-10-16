@@ -30,7 +30,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <img src="/logo.webp" alt="WebStore Dev" className="w-9 h-9 rounded-xl object-cover" />
+          <img src="/logo.webp" alt="WebStore Dev" className="w-12 h-12 rounded-xl object-cover" />
           <span className="leading-tight">
             <span className="block font-display font-bold text-stone-900">{BRAND.name}</span>
           </span>
