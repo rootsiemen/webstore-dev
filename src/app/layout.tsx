@@ -10,13 +10,13 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tarm.tech"),
-  title: "WebStore Dev — Ecommerce Website Developer",
+  title: "WebStore Dev — Full Stack Web Developer",
   description:
-    "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration. Websites that sell.",
+    "I build complete full stack websites and web apps with admin panel, online ordering, Cash on Delivery and payment integration. Websites that sell.",
   openGraph: {
     title: `${BRAND.name} — ${BRAND.tagline}`,
     description:
-      "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration.",
+      "I build complete full stack websites and web apps with admin panel, online ordering, Cash on Delivery and payment integration.",
     url: "https://www.tarm.tech",
     siteName: BRAND.name,
     locale: "en_US",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "https://www.tarm.tech/og-image.png",
         width: 1200,
         height: 630,
-        alt: "WebStore Dev — Ecommerce Website Developer",
+        alt: "WebStore Dev — Full Stack Web Developer",
       },
     ],
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${BRAND.name} — ${BRAND.tagline}`,
     description:
-      "I build complete ecommerce websites with admin panel, online ordering, Cash on Delivery and payment integration.",
+      "I build complete full stack websites and web apps with admin panel, online ordering, Cash on Delivery and payment integration.",
     images: ["https://www.tarm.tech/og-image.png"],
   },
 };
