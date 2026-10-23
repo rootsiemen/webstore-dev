@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 const SITE_URL = "https://www.tarm.tech";
 const PAGE_TITLE = `About — ${BRAND.name}`;
-const PAGE_DESC = `About ${BRAND.name}: I build complete ecommerce websites and business websites for clients worldwide — mobile-friendly, with admin panels and ordering built in.`;
+const PAGE_DESC = `About ${BRAND.name}: I build complete full stack websites and business websites for clients worldwide — mobile-friendly, with admin panels and ordering built in.`;
 const PAGE_URL = `${SITE_URL}/about`;
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
@@ -56,7 +56,7 @@ const jsonLd = [
       "@type": "ProfessionalService",
       name: BRAND.name,
       url: SITE_URL,
-      description: "Ecommerce website developer — complete online stores that sell.",
+      description: "Full stack web developer — complete websites and web apps that sell.",
     },
   },
 ];
@@ -72,7 +72,7 @@ export default function AboutPage() {
           <h1 className="font-display text-4xl sm:text-5xl font-bold text-stone-900">Websites that sell.</h1>
           <p className="mt-6 text-lg text-stone-600 leading-relaxed max-w-3xl">
             I'm Raza, a web developer behind {BRAND.name}. I build complete, mobile-friendly
-            ecommerce websites and business sites for clients around the world — with product
+            full stack websites and business sites for clients around the world — with product
             catalogs, shopping carts, Cash on Delivery, WhatsApp ordering, JazzCash/Easypaisa
             payments and easy admin panels, all included.
           </p>
