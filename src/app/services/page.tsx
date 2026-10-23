@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 const SITE_URL = "https://www.tarm.tech";
 const PAGE_TITLE = "Web Development Services — WebStore Dev";
 const PAGE_DESC =
-  "Custom business websites, ecommerce stores with admin panels, landing pages and online ordering with COD, JazzCash and Easypaisa integration.";
+  "Custom business websites, full stack websites with admin panels, landing pages and online ordering with COD, JazzCash and Easypaisa integration.";
 const PAGE_URL = `${SITE_URL}/services`;
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
