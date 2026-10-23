@@ -1,9 +1,9 @@
 // Shared site content: packages, services, FAQs. Single source of truth.
 export const BRAND = {
   name: "WebStore Dev",
-  tagline: "Ecommerce Website Developer | Online Stores That Sell",
-  whatsapp: "9647710737529",
-  email: "muhammadraza512512@gmail.com",
+  tagline: "Full Stack Web Developer | Websites & Web Apps That Sell",
+  whatsapp: "923258774221",
+  email: "neilsonsmarry@gmail.com",
 };
 
 export interface Pkg {
@@ -73,21 +73,21 @@ export interface Service {
 
 export const SERVICES: Service[] = [
   {
-    title: "Ecommerce Website",
-    slug: "ecommerce-website",
-    desc: "Complete online store with product catalog, cart, checkout and order management — ready to sell from day one.",
+    title: "Full Stack Web Development",
+    slug: "full-stack-web-development",
+    desc: "Complete full stack web application built end-to-end — storefront, shopping cart, checkout, order management and admin panel, ready to sell from day one.",
     icon: "cart",
     longDesc:
-      "A complete online store built to sell — beautiful storefront, smooth shopping experience and everything you need to take orders from day one. Your customers browse products, add to cart and check out in minutes, on any device.",
+      "A complete full stack web application built to sell — modern frontend, secure backend and database, with everything you need to take orders from day one. Your customers browse products, add to cart and check out in minutes, on any device, while you manage products, orders and customers from a simple admin panel.",
     features: [
-      "Modern homepage with banners and categories",
+      "Modern frontend with banners and categories",
       "Product pages with images, prices and variants",
       "Shopping cart with secure checkout flow",
+      "Backend, database and order management",
       "Cash on Delivery built in",
-      "Order notifications on every sale",
-      "Fully mobile responsive design",
+      "Admin panel — manage everything yourself",
     ],
-    bestFor: "Clothing brands, cosmetics, electronics, groceries — any business that wants to sell products online.",
+    bestFor: "Clothing brands, cosmetics, electronics, groceries — any business that wants a complete web application to sell products online.",
   },
   {
     title: "Business Website",
