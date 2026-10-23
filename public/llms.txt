@@ -1,22 +1,22 @@
 # WebStore Dev
 
-> Ecommerce website developer — complete online stores that sell. Custom Next.js websites, admin panels, Cash on Delivery, WhatsApp ordering, and payment integration.
+> Full stack web developer — complete websites and web apps that sell. Custom Next.js websites, admin panels, Cash on Delivery, WhatsApp ordering, and payment integration.
 
 WebStore Dev (https://www.tarm.tech) is a web development service by Raza. Every website is custom-built with Next.js and React — fast, mobile-responsive, and SEO-friendly. Packages include an admin panel, shopping cart, checkout, and order management.
 
 ## Pages
 
-- [Home — Ecommerce Website Developer](https://www.tarm.tech/)
+- [Home — Full Stack Web Developer](https://www.tarm.tech/)
 - [Services](https://www.tarm.tech/services)
 - [Pricing](https://www.tarm.tech/pricing)
 - [Portfolio](https://www.tarm.tech/portfolio)
 - [About](https://www.tarm.tech/about)
 - [Contact](https://www.tarm.tech/contact)
-- [Blog — Website & Ecommerce Guides](https://www.tarm.tech/blog)
+- [Blog — Website & Business Guides](https://www.tarm.tech/blog)
 
 ## Services
 
-- [Ecommerce Website](https://www.tarm.tech/services/ecommerce-website) — complete online store with product catalog, cart, checkout, order management
+- [Full Stack Web Development](https://www.tarm.tech/services/full-stack-web-development) — complete full stack web application with product catalog, cart, checkout, order management and admin panel
 - [Business Website](https://www.tarm.tech/services/business-website) — professional company website with services, portfolio, contact forms
 - [Admin Panel](https://www.tarm.tech/services/admin-panel) — dashboard to add products, update prices, track orders yourself
 - [Payment Integration](https://www.tarm.tech/services/payment-integration) — Stripe, PayPal, JazzCash, Easypaisa on your own merchant account
@@ -36,14 +36,14 @@ WebStore Dev (https://www.tarm.tech) is a web development service by Raza. Every
 - Tech stack: Next.js, React, Turso (SQLite) database
 - Delivery: Starter 5 days, Business 7 days, Pro 10 days
 - Payments accepted: Cash on Delivery, JazzCash, Easypaisa, Stripe, PayPal, WhatsApp ordering, Binance Pay, Payoneer, USDT
-- Contact: WhatsApp +9647710737529, email muhammadraza512512@gmail.com
+- Contact: WhatsApp +92 325 8774221, email neilsonsmarry@gmail.com
 - Domain & hosting: client buys their own (~$15/year); site stays 100% client-owned
 - Post-launch: client can update products/prices/orders themselves via admin panel — no coding needed
 - Sister projects: Temp Mail (https://tempmaill.tech), PlayZone (https://games.tempmaill.tech)
 
 ## Common questions, answered
 
-- What services does WebStore Dev offer? Custom ecommerce websites, business websites, admin panels, payment integration (Stripe/PayPal/JazzCash/Easypaisa), WhatsApp ordering, and SEO basics.
+- What services does WebStore Dev offer? Custom full stack websites and web apps, business websites, admin panels, payment integration (Stripe/PayPal/JazzCash/Easypaisa), WhatsApp ordering, and SEO basics.
 - How much does a website cost? Starter $80, Business $150, Pro $300 — one-time payment, no monthly fees to the developer.
 - How long does it take to build a website? Starter: 5 days. Business: 7 days. Pro: 10 days.
 - What technology is used? Next.js and React — fast, secure, and SEO-friendly.
