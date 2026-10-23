@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 const SITE_URL = "https://www.tarm.tech";
 const PAGE_TITLE = "Website Pricing — WebStore Dev";
 const PAGE_DESC =
-  "Transparent website pricing: starter sites, business websites and full ecommerce stores. No hidden fees — you own your domain, hosting and code.";
+  "Transparent website pricing: starter sites, business websites and full stack websites. No hidden fees — you own your domain, hosting and code.";
 const PAGE_URL = `${SITE_URL}/pricing`;
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
