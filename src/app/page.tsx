@@ -241,6 +241,49 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ---------- PROCESS ---------- */}
+      <section className="py-20 bg-stone-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHead
+            eyebrow="How it works"
+            title="From idea to a website that sells"
+            sub="A simple, transparent process — you always know what happens next, what it costs and when your website goes live."
+          />
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                n: "1",
+                t: "Share your idea",
+                d: "Message me on WhatsApp or through the contact form and tell me about your business — what you sell, who your customers are and what your website must do. I reply fast, usually within a few hours, and the first conversation costs nothing.",
+              },
+              {
+                n: "2",
+                t: "Get your plan and quote",
+                d: "You receive a clear recommendation: the right package for your goals, exactly what is included, the total price and the delivery date. Starter websites take 5 days, Business 7 days and Pro 10 days. No hidden charges and no advance needed just to talk.",
+              },
+              {
+                n: "3",
+                t: "I build your website",
+                d: "I design and build your complete website — storefront, product pages, shopping cart, checkout, Cash on Delivery, WhatsApp ordering and your admin panel. You see progress as it happens and can request changes before anything goes live.",
+              },
+              {
+                n: "4",
+                t: "Launch and free support",
+                d: "Your website goes live on your own domain, fully tested on phones, tablets and desktops. I walk you through the admin panel so you can manage products and orders yourself, and every project includes 30 days of free support after launch.",
+              },
+            ].map((s) => (
+              <div key={s.n} className="rounded-2xl border border-stone-200 bg-white p-7">
+                <span className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 grid place-items-center font-display font-bold mb-4">
+                  {s.n}
+                </span>
+                <h3 className="font-bold text-lg text-stone-900 mb-2">{s.t}</h3>
+                <p className="text-stone-600 text-sm leading-relaxed">{s.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ---------- FAQ ---------- */}
       <section className="py-20 bg-white">
         <script
