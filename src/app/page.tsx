@@ -42,6 +42,34 @@ const homeFaqSchema = {
   })),
 };
 
+const entitySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.tarm.tech/#organization",
+      name: BRAND.name,
+      url: "https://www.tarm.tech",
+      email: BRAND.email,
+      telephone: `+${BRAND.whatsapp}`,
+      description:
+        "WebStore Dev is a full stack web development service building complete websites and web apps with Next.js and React — admin panel, shopping cart, Cash on Delivery, WhatsApp ordering and payment integration included.",
+      sameAs: [
+        "https://github.com/rootsiemen",
+        "https://rootsiemen.github.io/Portfolio/",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tarm.tech/#website",
+      name: BRAND.name,
+      url: "https://www.tarm.tech",
+      publisher: { "@id": "https://www.tarm.tech/#organization" },
+      inLanguage: "en",
+    },
+  ],
+};
+
 // CSS-only browser mockup visual (no external images).
 function BrowserMock({ title, hue }: { title: string; hue: string }) {
   return (
@@ -223,13 +251,17 @@ export default async function HomePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(entitySchema) }}
+        />
         <div className="max-w-3xl mx-auto px-4">
           <SectionHead eyebrow="FAQ" title="Questions, answered" />
           <div className="space-y-4">
             {FAQS.map((f) => (
               <details key={f.q} className="group rounded-2xl border border-stone-200 bg-stone-50 open:bg-white open:shadow-sm transition">
                 <summary className="cursor-pointer list-none px-6 py-5 font-semibold text-stone-900 flex justify-between items-center gap-4">
-                  {f.q}
+                  <h3 className="font-semibold text-stone-900">{f.q}</h3>
                   <span className="text-emerald-700 text-xl group-open:rotate-45 transition shrink-0">+</span>
                 </summary>
                 <p className="px-6 pb-6 text-stone-600 text-sm leading-relaxed">{f.a}</p>

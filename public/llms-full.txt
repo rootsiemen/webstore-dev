@@ -1,0 +1,236 @@
+# WebStore Dev — Full Site Content (llms-full.txt)
+
+> WebStore Dev is a full stack web development service (https://www.tarm.tech) that builds complete websites and web apps with Next.js and React — storefront, shopping cart, checkout, order management and admin panel included. Contact: neilsonsmarry@gmail.com · WhatsApp: +923258774221. This file gives AI assistants the site's full service, pricing and FAQ content in plain text.
+
+## Services
+
+### Full Stack Web Development
+URL: https://www.tarm.tech/services/full-stack-web-development
+A complete full stack web application built to sell — modern frontend, secure backend and database, with everything you need to take orders from day one. Your customers browse products, add to cart and check out in minutes, on any device, while you manage products, orders and customers from a simple admin panel.
+Features:
+- Modern frontend with banners and categories
+- Product pages with images, prices and variants
+- Shopping cart with secure checkout flow
+- Backend, database and order management
+- Cash on Delivery built in
+- Admin panel — manage everything yourself
+Best for: Clothing brands, cosmetics, electronics, groceries — any business that wants a complete web application to sell products online.
+
+### Business Website
+URL: https://www.tarm.tech/services/business-website
+A polished, professional website that makes your business look established and trustworthy. Showcase your services, past work and customer reviews — and turn visitors into inquiries with smart contact forms and WhatsApp chat.
+Features:
+- Stunning homepage that tells your story
+- Services section with detail pages
+- Portfolio / past-work gallery
+- Testimonials and reviews section
+- Contact form with instant alerts
+- WhatsApp chat button on every page
+Best for: Agencies, freelancers, clinics, restaurants, real estate and local businesses that need a strong online presence.
+
+### Admin Panel
+URL: https://www.tarm.tech/services/admin-panel
+You stay in full control after launch. The admin panel is your website's back office — add new products, change prices, mark orders as delivered and update your portfolio, all from a simple dashboard. No developer needed, no coding at all.
+Features:
+- Add, edit and delete products in seconds
+- Update prices and stock instantly
+- View and manage all customer orders
+- Track inquiries from the contact form
+- Manage portfolio items and testimonials
+- Simple login — works on phone too
+Best for: Store owners who want to run their website themselves without paying a developer for every small change.
+
+### Payment Integration
+URL: https://www.tarm.tech/services/payment-integration
+Let customers pay you online, not just Cash on Delivery. I integrate trusted payment gateways into your checkout — cards, bank transfers and mobile wallets — all connected to YOUR merchant account, so every rupee goes straight to you.
+Features:
+- Stripe and PayPal for international cards
+- JazzCash / Easypaisa for local customers
+- Secure checkout with trusted providers
+- Your own merchant account — money comes to you
+- Payment status tracked with each order
+- COD and WhatsApp ordering still available
+Best for: Stores ready to accept card and mobile-wallet payments alongside Cash on Delivery.
+
+### WhatsApp Ordering
+URL: https://www.tarm.tech/services/whatsapp-ordering
+Most of your customers are already on WhatsApp — so let them order there. One tap on your website opens a chat with their cart or inquiry pre-written. You confirm the order in chat and deliver. Simple, personal, and it converts.
+Features:
+- One-tap WhatsApp order button
+- Cart details sent straight to your chat
+- Floating WhatsApp button on every page
+- Pre-written messages — customer just hits send
+- Works with COD for easy fulfillment
+- No app or signup needed for customers
+Best for: Small shops, home-based businesses and anyone whose customers prefer chatting over online checkout.
+
+### SEO Basics
+URL: https://www.tarm.tech/services/seo-basics
+A beautiful website is useless if nobody finds it. Every site I build comes with SEO fundamentals baked in — clean structure Google understands, lightning-fast loading, and proper titles and descriptions on every page so you start ranking from day one.
+Features:
+- SEO-friendly page structure and URLs
+- Fast loading for better rankings
+- Meta titles and descriptions on every page
+- Mobile-first — Google's top priority
+- Google-friendly sitemap included
+- Social sharing previews set up
+Best for: Any business that wants customers to discover them through Google search.
+
+## Packages
+
+### Starter Website — 80 USD
+- 5-page website
+- Up to 20 products
+- Mobile responsive design
+- Shopping cart & checkout
+- Cash on Delivery setup
+- 7-day support
+
+### Business Website — 150 USD
+- Everything in Starter
+- Up to 100 products
+- Admin panel — manage it yourself
+- WhatsApp ordering + COD
+- Order notifications
+- 14-day support
+
+### Pro Website — 300 USD
+- Everything in Business
+- Payment gateway integration
+- Custom banners & branding
+- Order email alerts
+- SEO basics
+- 30-day priority support
+
+## Frequently Asked Questions
+
+### How long does it take to build my website?
+Starter websites are delivered in 5 days, Business in 7 days and Pro in 10 days. Need it faster? Ask about express delivery.
+
+### Do I need to buy domain and hosting myself?
+Yes, but I guide you step by step — it costs around $15/year and takes 10 minutes. Your site stays 100% yours.
+
+### Can I update products myself after launch?
+Absolutely. The Business and Pro packages include an admin panel where you can add products, change prices and manage orders with zero coding. I'll show you how in a short walkthrough.
+
+### Which payment methods are supported?
+Cash on Delivery, JazzCash, Stripe, PayPal and WhatsApp ordering. Online gateways use your own merchant account, so the money goes straight to you.
+
+### Will my website work on mobile phones?
+Yes — every website is fully mobile responsive and tested on phones, tablets and desktops.
+
+### What do you need from me to start?
+Just your business name, logo (if you have one), product list with prices and photos, and your WhatsApp number. I handle everything else.
+
+## Main Pages
+
+- https://www.tarm.tech
+- https://www.tarm.tech/about
+- https://www.tarm.tech/services
+- https://www.tarm.tech/pricing
+- https://www.tarm.tech/portfolio
+- https://www.tarm.tech/contact
+- https://www.tarm.tech/faq
+- https://www.tarm.tech/blog
+- https://www.tarm.tech/privacy
+- https://www.tarm.tech/terms
+
+## Blog Articles
+
+- https://www.tarm.tech/blog/best-web-hosting-in-pakistan-2026-7-providers-compared
+- https://www.tarm.tech/blog/best-travel-insurance-in-pakistan-2026-7-plans-compared
+- https://www.tarm.tech/blog/best-car-insurance-in-pakistan-2026-7-plans-compared
+- https://www.tarm.tech/blog/best-child-education-savings-plans-in-pakistan-2026
+- https://www.tarm.tech/blog/best-sme-loans-in-pakistan-2026-8-banks-compared
+- https://www.tarm.tech/blog/freelancer-vs-agency-for-website-development-in-pakistan-2026
+- https://www.tarm.tech/blog/rent-vs-buy-a-house-in-pakistan-2026-the-real-math
+- https://www.tarm.tech/blog/how-much-does-a-landing-page-cost-in-pakistan-2026
+- https://www.tarm.tech/blog/paypal-alternatives-in-pakistan-2026-8-ways-to-get-paid
+- https://www.tarm.tech/blog/how-much-does-a-clinic-website-cost-in-pakistan-2026
+- https://www.tarm.tech/blog/credit-score-in-pakistan-2026-how-ecib-works
+- https://www.tarm.tech/blog/how-much-does-a-mobile-app-cost-in-pakistan-2026
+- https://www.tarm.tech/blog/best-car-loans-in-pakistan-2026-8-banks-compared
+- https://www.tarm.tech/blog/how-to-write-a-landing-page-that-converts-in-pakistan-2026-guide
+- https://www.tarm.tech/blog/how-to-invest-in-treasury-bills-in-pakistan-2026-guide
+- https://www.tarm.tech/blog/zakat-calculation-in-pakistan-2026-complete-guide-with-real-examples
+- https://www.tarm.tech/blog/salon-website-cost-in-pakistan-2026-full-price-breakdown
+- https://www.tarm.tech/blog/best-home-loans-in-pakistan-2026-7-banks-compared
+- https://www.tarm.tech/blog/wordpress-vs-custom-website-for-small-business-pakistan-2026
+- https://www.tarm.tech/blog/takaful-vs-insurance-in-pakistan-2026-what-s-the-difference
+- https://www.tarm.tech/blog/wedding-cost-in-pakistan-2026-full-budget-breakdown
+- https://www.tarm.tech/blog/best-website-builders-in-pakistan-2026-7-compared
+- https://www.tarm.tech/blog/plot-vs-file-in-pakistan-2026-real-estate-investment-guide-2
+- https://www.tarm.tech/blog/plot-vs-file-in-pakistan-2026-real-estate-investment-guide
+- https://www.tarm.tech/blog/how-to-get-web-design-clients-in-pakistan-2026-9-proven-ways
+- https://www.tarm.tech/blog/best-business-bank-accounts-in-pakistan-2026-7-banks-compared
+- https://www.tarm.tech/blog/cost-of-starting-a-business-in-pakistan-2026-full-breakdown
+- https://www.tarm.tech/blog/add-urdu-to-your-website-in-pakistan-the-2026-guide
+- https://www.tarm.tech/blog/kamyab-jawan-loan-2026-how-to-apply-online-step-by-step
+- https://www.tarm.tech/blog/how-much-does-a-real-estate-website-cost-in-pakistan-2026
+- https://www.tarm.tech/blog/best-money-transfer-apps-to-pakistan-in-2026-fees-compared
+- https://www.tarm.tech/blog/islamic-banking-vs-conventional-banking-in-pakistan-2026
+- https://www.tarm.tech/blog/website-security-checklist-for-small-businesses-in-pakistan-2026
+- https://www.tarm.tech/blog/sbp-policy-rate-2026-what-11-5-means-for-your-money
+- https://www.tarm.tech/blog/website-redesign-cost-in-pakistan-2026-the-full-price-guide
+- https://www.tarm.tech/blog/best-personal-loans-in-pakistan-2026-7-banks-compared
+- https://www.tarm.tech/blog/prize-bonds-in-pakistan-2026-draws-prizes-tax-smart-play
+- https://www.tarm.tech/blog/ai-website-builders-vs-hiring-a-web-developer-in-pakistan-2026
+- https://www.tarm.tech/blog/how-to-file-income-tax-return-in-pakistan-2026-salaried-guide
+- https://www.tarm.tech/blog/website-maintenance-cost-in-pakistan-2026-the-hidden-bill
+- https://www.tarm.tech/blog/best-online-stock-brokers-in-pakistan-2026
+- https://www.tarm.tech/blog/rental-income-tax-in-pakistan-2026-rates-and-how-to-pay
+- https://www.tarm.tech/blog/email-marketing-for-online-stores-in-pakistan-7-winning-campaigns
+- https://www.tarm.tech/blog/how-to-calculate-zakat-on-savings-in-pakistan-2026-guide
+- https://www.tarm.tech/blog/7-best-payment-gateways-in-pakistan-for-online-stores-2026
+- https://www.tarm.tech/blog/best-credit-cards-in-pakistan-2026-7-cards-compared
+- https://www.tarm.tech/blog/national-savings-profit-rates-pakistan-2026-schemes-guide
+- https://www.tarm.tech/blog/how-to-choose-a-domain-name-for-your-pakistani-business-2026
+- https://www.tarm.tech/blog/gold-vs-real-estate-in-pakistan-which-wins-in-2026
+- https://www.tarm.tech/blog/how-long-does-it-take-to-build-a-website-in-pakistan-2026
+- https://www.tarm.tech/blog/10-questions-to-ask-before-hiring-a-web-developer-in-2026
+- https://www.tarm.tech/blog/best-savings-accounts-in-pakistan-2026-7-top-picks-compared
+- https://www.tarm.tech/blog/how-to-hire-a-web-developer-in-pakistan-2026-guide
+- https://www.tarm.tech/blog/is-crypto-legal-in-pakistan-in-2026-rules-tax-guide
+- https://www.tarm.tech/blog/how-to-save-money-on-a-low-salary-in-pakistan-2026-guide
+- https://www.tarm.tech/blog/daraz-vs-own-website-in-pakistan-which-is-better-for-sellers
+- https://www.tarm.tech/blog/ecommerce-launch-checklist-for-furniture-stores-in-pakistan
+- https://www.tarm.tech/blog/how-to-sell-on-tiktok-in-pakistan-7-tactics-for-online-stores
+- https://www.tarm.tech/blog/next-js-for-ecommerce-in-pakistan-cost-speed-seo-guide
+- https://www.tarm.tech/blog/how-to-accept-binance-pay-on-your-pakistani-online-store
+- https://www.tarm.tech/blog/how-to-optimize-product-images-for-your-pakistani-online-store
+- https://www.tarm.tech/blog/how-to-set-up-facebook-shop-in-pakistan-2026-guide
+- https://www.tarm.tech/blog/core-web-vitals-for-pakistani-online-stores-pass-the-speed-test
+- https://www.tarm.tech/blog/abandoned-cart-recovery-pakistan-7-whatsapp-tips-that-win-sales
+- https://www.tarm.tech/blog/ecommerce-post-launch-checklist-first-30-days-in-pakistan
+- https://www.tarm.tech/blog/jazzcash-vs-easypaisa-for-online-stores-which-should-you-pick
+- https://www.tarm.tech/blog/ecommerce-launch-checklist-for-grocery-stores-in-pakistan
+- https://www.tarm.tech/blog/how-to-write-product-descriptions-that-sell-pakistan-guide
+- https://www.tarm.tech/blog/ecommerce-launch-checklist-for-beauty-stores-in-pakistan
+- https://www.tarm.tech/blog/return-policy-for-your-online-store-in-pakistan-a-simple-guide
+- https://www.tarm.tech/blog/ecommerce-launch-checklist-for-electronics-stores-in-pakistan
+- https://www.tarm.tech/blog/google-business-profile-for-pakistani-online-stores-2026
+- https://www.tarm.tech/blog/best-courier-for-your-online-store-in-pakistan-2026
+- https://www.tarm.tech/blog/product-page-seo-for-pakistani-online-stores-a-step-by-step-guide
+- https://www.tarm.tech/blog/seo-mistakes-pakistani-online-stores-make-and-how-to-fix-them
+- https://www.tarm.tech/blog/ecommerce-checklist-for-beginners-in-pakistan-10-first-steps
+- https://www.tarm.tech/blog/ecommerce-launch-mistakes-to-avoid-in-pakistan-2026
+- https://www.tarm.tech/blog/how-to-improve-online-store-speed-on-4g-in-pakistan
+- https://www.tarm.tech/blog/next-js-vs-wordpress-for-pakistani-businesses-which-wins
+- https://www.tarm.tech/blog/webstore-seo-7-local-tactics-to-rank-your-pakistani-store-higher
+- https://www.tarm.tech/blog/ecommerce-launch-checklist-for-clothing-stores-in-pakistan
+- https://www.tarm.tech/blog/how-to-build-customer-trust-in-your-pakistani-online-store
+- https://www.tarm.tech/blog/how-much-does-a-website-cost-in-pakistan-2026-price-guide
+- https://www.tarm.tech/blog/product-photography-with-your-phone-7-tips-for-pakistani-sellers
+- https://www.tarm.tech/blog/whatsapp-ordering-for-your-online-store-setup-guide-for-pakistan
+- https://www.tarm.tech/blog/facebook-google-ads-for-pakistani-stores-a-beginner-s-budget-guide
+- https://www.tarm.tech/blog/cod-done-right-how-to-cut-fake-orders-and-boost-profit-in-pakistan
+- https://www.tarm.tech/blog/ecommerce-launch-checklist-15-things-to-get-right-before-you-open
+- https://www.tarm.tech/blog/what-is-nextjs
+- https://www.tarm.tech/blog/why-small-business-needs-website
+- https://www.tarm.tech/blog/landing-page-secrets-convert
+- https://www.tarm.tech/blog/seo-basics-small-business
+- https://www.tarm.tech/blog/speed-up-website-10-tips
+- https://www.tarm.tech/blog/whatsapp-ordering-guide
+- https://www.tarm.tech/blog/shopify-vs-custom-website
+- https://www.tarm.tech/blog/jazzcash-easypaisa-online-store
+- https://www.tarm.tech/blog/how-much-does-a-website-cost-in-pakistan-2026-price-guide-2
