@@ -8,6 +8,16 @@ const nextConfig = {
         destination: "/services/full-stack-web-development",
         permanent: true,
       },
+      {
+        source: "/packages",
+        destination: "/pricing",
+        permanent: true,
+      },
+      {
+        source: "/blog/ecommerce-launch-checklist",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
 };
