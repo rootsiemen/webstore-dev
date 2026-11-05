@@ -57,6 +57,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsAppFloat />
         {/* 100% privacy-first analytics */}
         <script async src="https://scripts.simpleanalyticscdn.com/latest.js" />
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CQFZ5ZJZHT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CQFZ5ZJZHT');
+          `}
+        </Script>
       </body>
     </html>
   );
